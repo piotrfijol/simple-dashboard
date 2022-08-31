@@ -133,6 +133,10 @@ section {
     float: right;
 }
 
+.items-wrapper:hover {
+    cursor: pointer;
+}
+
 section .items-container {
     width: 150vw;
     height: 100%;
@@ -229,6 +233,7 @@ footer a {
     color: #666;
     text-align: center;
 }
+
 
 @media screen and (min-width: 686px) {
 

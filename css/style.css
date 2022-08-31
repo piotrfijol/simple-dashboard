@@ -6,3 +6,57 @@
 body {
     font-family: Inter;
 }
+
+header {
+    background: linear-gradient(90deg, #3E87CE, #2B67A1 15%, #113961);
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    max-height: 80px;
+}
+
+header h1 {
+    color: #FFF;
+    font-size: clamp(12px, 3.5vw, 16px);
+    text-align: center;
+    width: 40%;
+}
+
+header h1::after {
+    content: 'Design />';
+    color: #3CFF4F;
+}
+
+header nav {
+    max-width: 62%;
+    min-width: 120px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul > li {
+    display: inline-block;
+}
+
+header nav ul > li:first-child {
+    margin-left: 5vw;
+}
+
+header nav ul > li:not(:first-child) {
+    margin-left: 10vw;
+}
+
+header .nav-link {
+    color: #FFF;
+    font-size: min(1.3rem, 32px);
+}
+
+header .nav-link .label {
+    display: none;
+}

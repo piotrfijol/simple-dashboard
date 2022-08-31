@@ -14,6 +14,7 @@
 body {
     font-family: Inter;
     background-color: var(--primary-color);
+    padding-bottom: 150px;
 }
 
 header {
@@ -135,8 +136,6 @@ section .items-container {
     display: inline-block;
 }
 
-
-
 section .items-container .item {
     display: inline-block;
     width: 140px;
@@ -182,4 +181,41 @@ section.items::after {
     content: '';
     display: block;
     clear: both;
+}
+
+.summary {
+    padding: 1rem;
+}
+
+.summary .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    gap: .8rem;
+}
+
+.box {
+    box-shadow: 3px 4px 3px #C8C8C8;
+    background-color: var(--secondary-color);
+}
+
+.summary .container > * {
+    border-radius: 18px;
+}
+
+.details {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.last-conversation {
+    grid-column: span 2;
+}
+
+.login-info {
+    grid-column: 1 / 2;
+}
+
+.summary .container .box:last-child {
+    grid-column: 2 / 3;
 }

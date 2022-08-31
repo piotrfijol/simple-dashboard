@@ -3,8 +3,17 @@
     padding: 0;
 }
 
+:root {
+    --primary-color: #F2F2F2;
+    --secondary-color: #FFF;
+    --secondary-alter-color: #2B67A1;
+    --accent-color: #80ff8c;
+    --text-color: #213846;
+}
+
 body {
     font-family: Inter;
+    background-color: var(--primary-color);
 }
 
 header {
@@ -28,7 +37,7 @@ header h1 {
 
 header h1::after {
     content: 'Design />';
-    color: #3CFF4F;
+    color: var(--accent-color);
 }
 
 header nav {
@@ -60,3 +69,40 @@ header .nav-link {
 header .nav-link .label {
     display: none;
 }
+
+.profile-data {
+    width: 100%;
+
+}
+
+.profile-data {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.user-info {
+    margin-right: 8px;
+}
+
+.username {
+    font-weight: 600;
+    color: var(--text-color);
+
+}
+
+.user-role {
+    font-weight: 500;
+    font-size: 12px;
+    color: #7D7D7D;
+}
+
+.user-avatar {
+    width: 55px;
+    height: 55px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
